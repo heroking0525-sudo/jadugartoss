@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url('img/bbb.jpg') no-repeat center center/cover;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 0, 25, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background: rgba(25, 0, 40, 0.6);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #d500f9;
+  box-shadow: 0 0 25px #d500f9, 0 0 50px #8e24aa;
+  max-width: 600px;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: #f3e5f5;
+  text-shadow: 0 0 20px #d500f9, 0 0 40px #8e24aa;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Info */
+.subs {
+  font-size: 1.1rem;
+  color: #ba68c8;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ffd54f;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #ffcc80;
+  margin-bottom: 20px;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #69f0ae;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-shadow: 0 0 15px #69f0ae;
+}
+
+/* Animated Button */
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #ba68c8, #8e24aa);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: fade 2s infinite;
+  box-shadow: 0 0 25px #8e24aa, 0 0 50px #d500f9;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #8e24aa, #d500f9);
+  box-shadow: 0 0 35px #d500f9, 0 0 70px #ba68c8;
+}
+
+/* Fade In-Out Animation */
+@keyframes fade {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #ffb3b3;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 12px 28px;
+    font-size: 1.5rem;
+  }
+  .disclaimer {
+    font-size: 0.2rem;
+  }
+}
